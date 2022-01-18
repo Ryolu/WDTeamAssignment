@@ -1,3 +1,5 @@
+/* Navigation */
+/* .... Style rules for nagivation .... */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 *{
@@ -7,11 +9,13 @@
   background-color: #000000;
 }
 
+
 li, a, button {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #edf0f1;
+  color: #FFFFFF;
+  /* color: #edf0f1; */
   text-decoration: none;
 }
 
@@ -19,13 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-}
-
-.logo {
-  cursor: pointer;
-  order: 3;
-  margin-right: auto;
+  padding: 5%;
 }
 
 .nav_links {
@@ -34,23 +32,32 @@ header {
 
 .nav_links li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 35px;
 }
 
 .nav_links li a {
-  transition: all 0.3s ease 0s;
+  transition: all 0.15s ease-out;
 }
 
 .nav_links li a:hover {
-  color: #0088a9;
+  color: yellow;
 }
 
+
+/* Main Content Area */
+
+
+
+
+/* Footer Content */
+/* .... Style rules for footer content .... */
 .footer-container{
-  background: #212329;
-  padding: 4rem 0 4 4rem 0;
+  background: #000000;
+  padding: 20px;
 }
+
 .footer {
-  width: 80%
+  width: 100%
   height: 40vh;
   background-color: #000000;
   color: #FFFFFF;
@@ -58,32 +65,36 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 8%;
 }
 
 .footer-heading {
   display: flex;
   flex-direction: column;
-  margin-right: 4rem;
+  margin-right: -200 px;
+  font-size: 14px;
 }
 
 .footer-heading h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 15px;
+  color: orange;
 }
 
 .footer-heading a {
   color: #FFFFFF;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .footer-heading a:hover {
-  color: red;
-  transition: 0.3s ease-out;
+  color: skyblue;
+  transition: 0.2s ease-out;
 }
 
 .footer-email-form h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 15px;
+  font-size: 21px;
 }
 
 #footer-email {
@@ -92,30 +103,31 @@ header {
   border-radius: 4px;
   outline: none;
   border: none;
-  padding-left: 0.5rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
 }
 
 #footer-email::placeholder {
-  color: #b1b1b1;
+  color: #000000;
+  background-color: #FFFFFF
 }
 
 #footer-email-button {
-  width: 100px;
+  width: 80px;
   height: 40px;
   border-radius: 4px;
   background-color: #F9423D;
   outline: none;
   border: none;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
-#footer-email-btn:hover {
+#footer-email-button:hover {
   cursor: pointer;
-  background-color: skyblue;
-  transition: all 0.4s ease-out;
+  background-color: green;
+  transition: all 0.2s ease-out;
 }
 
 @media screen and (max-width: 1150px) {
@@ -123,6 +135,6 @@ header {
      height: 50vh;
   }
   .footer-email-form {
-    margin-top: 4rem;
-  }
+    margin-top: 32px;
+  } */
 }
