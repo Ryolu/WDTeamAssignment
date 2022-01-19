@@ -1,0 +1,210 @@
+*
+{
+  font-family: "Poppins", sans-serif;
+}
+
+header
+{
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+header h1
+{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+header p
+{
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 0px;
+}
+
+#ButtonNav
+{
+  list-style-type: none;
+  width: 95%;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#ButtonNav li
+{
+  display: inline-block;
+}
+
+#ButtonNav li a.button:link, li a.button:visited
+{
+  display: inline-block;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#ButtonNav li a.button.first:link, li a.button.first:visited
+{
+  border: 2px solid green;
+}
+
+#ButtonNav li a.button.second:link, li a.button.second:visited
+{
+  border: 2px solid blue;
+}
+
+#ButtonNav li a.button.third:link, li a.button.third:visited
+{
+  border: 2px solid yellow;
+}
+
+#ButtonNav li a.button.first:hover, li a.button.first:active
+{
+  background-color: green;
+  color: white;
+}
+
+#ButtonNav li a.button.second:hover, li a.button.second:active
+{
+  background-color: blue;
+  color: white;
+}
+
+#ButtonNav li a.button.third:hover, li a.button.third:active
+{
+  background-color: yellow;
+  color: black;
+}
+
+#AnnualPass:target:before, #OneDayTicketA:target:before, #FamilyFun:target:before {
+content:"";
+display: block;
+height: 200px;
+margin: -200px 0 0;
+}
+
+
+.row
+{
+  margin-left: 150px;
+  height: 200px;
+  width: 80%;
+  border-style: ridge;
+  background-color: #f3f3f3;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.row.pass
+{
+    border-color: green;
+}
+
+.row.ticket
+{
+    border-color: blue;
+}
+
+.row.promotion
+{
+    border-color: yellow;
+}
+
+.column
+{
+  float:left;
+  height: 100%;
+}
+
+.column.middle
+{
+  width: 50%;
+}
+
+.column.side
+{
+  width: 25%;
+  text-align: center;
+}
+
+.column h2
+{
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.column h1
+{
+  font-size: 40px;
+}
+
+.row button
+{
+  border: none;
+  border-radius: 10px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.row.pass button
+{
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+}
+
+.row.pass button:hover
+{
+  background-color: green;
+  color: white;
+}
+
+.row.ticket button
+{
+  background-color: white;
+  color: black;
+  border: 2px solid blue;
+}
+
+.row.ticket button:hover
+{
+  background-color: blue;
+  color: white;
+}
+
+.row.promotion button
+{
+  background-color: white;
+  color: black;
+  border: 2px solid yellow;
+}
+
+.row.promotion button:hover
+{
+  background-color: yellow;
+  color: black;
+}
