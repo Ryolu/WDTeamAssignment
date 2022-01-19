@@ -94,7 +94,7 @@
   color: black;
 }
 
-#AnnualPass:target:before, #OneDayTicketA:target:before, #FamilyFun:target:before {
+#AnnualPass:target:before, #OneDayTicketA:target:before, #StudentPass:target:before {
 content:"";
 display: block;
 height: 200px;
