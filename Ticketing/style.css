@@ -104,7 +104,8 @@ margin: -200px 0 0;
 
 .row
 {
-  margin-left: 150px;
+  align-items: center;
+  margin: auto;
   height: 200px;
   width: 80%;
   border-style: ridge;
