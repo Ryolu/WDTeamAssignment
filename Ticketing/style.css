@@ -3,7 +3,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-header
+#BigName
 {
   background-color: #fff;
   width: 100%;
@@ -13,13 +13,13 @@ header
   padding-bottom: 50px;
 }
 
-header h1
+#BigName h1
 {
   font-size: 50px;
   font-weight: 600;
 }
 
-header p
+#BigName p
 {
   color: #777;
   font-size: 18px;
