@@ -15,24 +15,30 @@ li, a, button {
   font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
-  /* color: #edf0f1; */
   text-decoration: none;
 }
 
-header {
+
+.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 5%;
+  position: sticky;
+  justify-content: space-between;
 }
 
 .nav_links {
   list-style: none;
+  display: flex;
+  justify-content: right;
 }
 
 .nav_links li {
-  display: inline-block;
-  padding: 0px 35px;
+  display: flex;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .nav_links li a {
@@ -43,6 +49,15 @@ header {
   color: yellow;
 }
 
+.header-logo {
+  display: inline-flex;
+  justify-content: left;
+}
+
+.covid-logo {
+  display: inline-flex;
+  justify-content: right;
+}
 
 /* Main Content Area */
 
@@ -51,45 +66,32 @@ header {
 
 /* Footer Content */
 /* .... Style rules for footer content .... */
-.footer-container{
-  background: #000000;
-  padding: 15px;
-}
 
 .footer {
   width: 100%;
-  height: 40vh;
-  background-color: #000000;
   color: #FFFFFF;
   margin:0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8%;
+  display: inline-flex;
+  justify-content: space-evenly;
   position: fixed;
+  padding-top: 60px;
 }
 
 .footer-heading {
   display: flex;
   flex-direction: column;
-  margin-right: -200 px;
   font-size: 14px;
 }
 
-.footer-heading h2 {
-  margin-bottom: 15px;
-  color: orange;
-}
-
 .footer-heading a {
-  color: #FFFFFF;
+  color: #FF6347;
   text-decoration: none;
   margin-bottom: 5px;
   font-size: 14px;
 }
 
 .footer-heading a:hover {
-  color: skyblue;
+  color: #66CDAA;
   transition: 0.2s ease-out;
 
 }
@@ -97,53 +99,69 @@ header {
 .footer-email-form h2 {
   margin-bottom: 15px;
   font-size: 21px;
+  font-family: "Quicksand", sans-serif;
 }
 
-#footer-fname {
-  width: 150px;
-  padding: 10%;
-
+.newsletter {
+  color: #FF6347;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
 }
-
 
 #footer-email {
-  width: 250px;
-  height: 40px;
+  width: 200px;
   border-radius: 4px;
   outline: none;
   border: none;
-  padding-left: 10px;
   font-size: 14px;
   margin-bottom: 16px;
+  font-family: "Quicksand", sans-serif;
 }
 
 #footer-email::placeholder {
   color: #000000;
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+  font-family: "Quicksand", sans-serif;
 }
 
 #footer-email-button {
-  width: 80px;
-  height: 40px;
+  width: 100px;
+  height: 30px;
   border-radius: 4px;
-  background-color: #F9423D;
+  background-color: #FF6347;
   outline: none;
   border: none;
   color: #FFFFFF;
   font-size: 14px;
+  font-family: "Quicksand", sans-serif;
 }
 
 #footer-email-button:hover {
   cursor: pointer;
-  background-color: green;
+  background-color: #66CDAA;
   transition: all 0.2s ease-out;
 }
 
-/* @media screen and (max-width: 1150px) {
-  .footer {
-     height: 50vh;
-  }
+#footer-lname {
+  width: 200px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#footer-lname::placeholder {
+  color: #000000;
+  background-color: #FFFFFF;
+  font-family: "Quicksand", sans-serif;
+}
+
+
+@media screen and (max-width: 1150px) {
   .footer-email-form {
     margin-top: 32px;
-  } */ */
+  } */
 }
