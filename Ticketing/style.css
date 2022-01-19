@@ -3,7 +3,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-header
+#BigName
 {
   background-color: #fff;
   width: 100%;
@@ -13,13 +13,13 @@ header
   padding-bottom: 50px;
 }
 
-header h1
+#BigName h1
 {
   font-size: 50px;
   font-weight: 600;
 }
 
-header p
+#BigName p
 {
   color: #777;
   font-size: 18px;
@@ -94,7 +94,7 @@ header p
   color: black;
 }
 
-#AnnualPass:target:before, #OneDayTicketA:target:before, #FamilyFun:target:before {
+#AnnualPass:target:before, #OneDayTicketA:target:before, #StudentPass:target:before {
 content:"";
 display: block;
 height: 200px;
@@ -104,7 +104,8 @@ margin: -200px 0 0;
 
 .row
 {
-  margin-left: 150px;
+  align-items: center;
+  margin: auto;
   height: 200px;
   width: 80%;
   border-style: ridge;
