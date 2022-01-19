@@ -17,7 +17,7 @@ li, a, button {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   padding: 5%;
 }
@@ -29,6 +29,7 @@ header {
 .nav_links li {
   display: inline-block;
   padding: 0px 35px;
+    align-self: flex-end;
 }
 
 .nav_links li a {
@@ -121,21 +122,16 @@ section:nth-child(even) .container .content
   left: 0;
 }
 
-.footer-container{
-  background: #000000;
-  padding: 20px;
-}
 
-.footer-container{
-  background: #000000;
+.footer-container {
   padding: 20px;
   position: absolute;
 }
 
+
 .footer {
-  width: 100%
+  width: 150%;
   height: 40vh;
-  background-color: #000000;
   color: #FFFFFF;
   margin:0 auto;
   display: flex;
