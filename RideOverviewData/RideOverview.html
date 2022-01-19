@@ -3,8 +3,26 @@
   <head>
     <title>Slideshow Images</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../groupfolder/index.css">
   </head>
   <body>
+
+    <header>
+        <img class="FeliciaFoodFactory1" src="../groupfolder/FeliciaFoodFactory1.png" alt="logo" width="200px" height="200px">
+        <nav>
+           <ul class="nav_links">
+              <li><a href="#">Membership</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Attractions</a></li>
+              <li><a href="#">Restaurant</a></li>
+              <li><a href="#">Hotel</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Ticketing</a></li>
+           </ul>
+        </nav>
+        <img class="alert-sign" src="../groupfolder/alert-sign.png" alt="covid" width="50px" height="50px">
+    </header>
+
     <div class="slideshow-container">
       <div class="slide">
         <img src="adultride.jpeg" style="width:100%">
@@ -15,7 +33,7 @@
         <div class="slideText">Children's Rides</div>
       </div>
       <div class="slide">
-        <img src="wheel.jpeg" style="width:100%">
+        <img src="wheel.jpeg" style="width:100%" >
         <div class="slideText">Wheel</div>
       </div>
       <a class="prev" onclick="plusSlides(-1)" alt="Previous Slide">&#10094;</a>
@@ -28,9 +46,67 @@
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     <br>
-    <div class="otherStuff">
-
+    <br>
+    <br>
+    <div style="text-align:center">
+      <div class="learnmore">
+        <img src="carousel.jpeg" style="width:100%" >
+        <div class="overlay">
+          <div class="overlaytext">Kids have stuff to ride here. We made sure that the rides are safe enough so that parental supervision is optional. Go spend time with the missus. You're welcome.
+          <p>Click for more<p/>
+          </div>
+        </div>
+      </div>
+      <div class="learnmore">
+        <img src="hauntedhouse.jpeg" style="width:100%" >
+        <div class="overlay">
+          <div class="overlaytext">Having adults only attractions may not seem as weird as it sounds. After all, what child can handle their deepest darkest fears in a haunted house?
+          <p>Click for more<p/>
+          </div>
+        </div>
+      </div>
+      <div class="learnmore">
+        <img src="fastwheel.jpeg" style="width:100%" >
+        <div class="overlay">
+          <div class="overlaytext">I know it's just a wheel. How interesting can it get? But what about a wheel that spins 100rpm?
+          <p>Click for more<p/>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer>
+         <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Terms & Conditions</h2>
+                    <a href="#">Location</a>
+                    <a href="#">Customers</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-heading footer-2">
+                  <h2>Contact & Support</h2>
+                    <a href="#">Support</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Sponsorhsips</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Social Media</h2>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="footer-heading email-form">
+                   <h2>Join our newsletter</h2>
+                   <input type="email" placeholder="Enter your email address" id="footer-email">
+                   <input type="submit" value="Sign up" id="footer-email-button">
+                </div>
+            </div>
+         </div>
+    </footer>
+
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
