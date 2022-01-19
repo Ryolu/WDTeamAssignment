@@ -23,6 +23,7 @@
         <img class="alert-sign" src="../groupfolder/alert-sign.png" alt="covid" width="50px" height="50px">
     </header>
 
+<!-- this is the slides looking part -->
     <div class="slideshow-container">
       <div class="slide">
         <img src="adultride.jpeg" style="width:100%">
@@ -36,10 +37,12 @@
         <img src="wheel.jpeg" style="width:100%" >
         <div class="slideText">Wheel</div>
       </div>
+      <!-- this calls the javascript funtion when you click the < and > at the side of the slides -->
       <a class="prev" onclick="plusSlides(-1)" alt="Previous Slide">&#10094;</a>
       <a class="next" onclick="plusSlides(1)" alt="Previous Slide">&#10095;</a>
     </div>
     <br>
+    <!-- this is the navigation dot thing at the bottom of the slides -->
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
@@ -48,6 +51,7 @@
     <br>
     <br>
     <br>
+    <!-- this is the other link, with some navigation -->
     <div style="text-align:center">
       <div class="learnmore">
         <img src="carousel.jpeg" style="width:100%" >
@@ -106,16 +110,21 @@
             </div>
          </div>
     </footer>
-
+<!-- simple code to make the slides work -->
     <script>
+    // start from first slide
       var slideIndex = 1;
+      // then you show the slide
       showSlides(slideIndex);
+      // function to change slides
       function plusSlides(n) {
         showSlides(slideIndex += n);
       }
+      // skip to this slide
       function currentSlide(n) {
         showSlides(slideIndex = n);
       }
+      // to actually show the slide
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("slide");

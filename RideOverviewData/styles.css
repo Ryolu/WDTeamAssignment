@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 * {
   box-sizing: border-box
 }
 body {
-  font-family: Verdana, sans-serif;
+  font-family: "Poppins",sans-serif;
   margin: 0
 }
 .slide {
@@ -42,7 +43,7 @@ body {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* Caption text */
+/* Caption text for the slides */
 .slideText {
   color: white;
   font-size: 15px;
@@ -54,7 +55,7 @@ body {
 .slideText:hover {
   text-decoration: underline;
 }
-/* The dots/bullets/indicators */
+/* navigation dot things below the slides */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -73,13 +74,15 @@ body {
 @media only screen and (max-width: 300px) {
   .prev,
   .next,
-  .text {
+  .text,
+  .overlaytext {
     font-size: 11px
   }
 }
 
 /* END OF SLIDES PORTION */
 
+/* this is the container for each chunk */
 .learnmore {
   position: relative;
   width: 20%;
