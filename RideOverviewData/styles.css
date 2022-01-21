@@ -69,7 +69,7 @@ body {
 }
 .active,
 .dot:hover {
-  background-color: #111111;
+  background-color: #333;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -83,19 +83,24 @@ body {
 
 /* END OF SLIDES PORTION */
 
+/* grid stuff */
+
+.learngrid {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  grid-template-areas: "content content content";
+  grid-column-gap: 5%;
+  justify-content: space-evenly;
+}
+
 /* this is the container for each chunk */
 .learnmore {
-  position: relative;
-  width: 20%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: inline-block;
+  height: 61%;
   overflow: hidden;
 }
 
 .learnmore img {
   width: 100%;
-  margin: 0;
 }
 
 .learnmore:hover .overlay {
@@ -106,7 +111,7 @@ body {
 
 .overlay {
   opacity: 0;
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   transition: .5s ease;
