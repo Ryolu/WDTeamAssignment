@@ -9,16 +9,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-      <img class="FeliciaFoodFactory1" src="FeliciaFoodFactory1.png" alt="logo" width="140px" height="140px">
-      <nav>
-         <ul class="nav_links">
-            <li><a href="#">Attractions</a></li>
-            <li><a href="#">Facilities</a></li>
-            <li><a href="#">Sales</a></li>
-         </ul>
-      </nav>
-      <img class="alert-sign" src="alert-sign.png" alt="covid" width="30px" height="30px">
+   <header>
+     <div class="header-container">
+        <div class="header">
+            <div class="header-logo">
+                <img class="FeliciaFoodFactoryNew" src="FeliciaFoodFactoryNew.png" alt="logo" width="200px" height="200px">
+            </div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">ATTRACTIONS</a></li>
+                    <li><a href="#">FACILITIES</a></li>
+                    <li><a href="#">SALES</a></li>
+                </ul>
+            </nav>
+            <div class="covid-logo">
+                <img class="alert-sign" src="alert-sign.png" alt="covid" width="50px" height="50px">
+            </div>
+        </div>
+    </div>
   </header>
   <section>
     <div class="box">
@@ -80,34 +88,34 @@
     });
 
   </script>
-  <div class="footer-container">
-     <div class="footer">
-         <div class="footer-heading footer-1">
-             <h2>Terms & Conditions</h2>
-             <a href="#">Location</a>
-             <a href="#">Customers</a>
-             <a href="#">Terms of Service</a>
-         </div>
-         <div class="footer-heading footer-2">
-           <h2>Contact & Support</h2>
-             <a href="#">Support</a>
-             <a href="#">Contacts</a>
-             <a href="#">Jobs</a>
-             <a href="#">Sponsorhsips</a>
-         </div>
-         <div class="footer-heading footer-3">
-             <h2>Social Media</h2>
-             <a href="#">Instagram</a>
-             <a href="#">Facebook</a>
-             <a href="#">Youtube</a>
-             <a href="#">Twitter</a>
-         </div>
-         <div class="footer-email-form">
-            <h2>Join our newsletter</h2>
-            <input type="email" placeholder="Enter your email address" id="footer-email">
-            <input type="submit" value="Sign up" id="footer-email-button">
-         </div>
-     </div>
-  </div>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <a href="#"><b>OPENING HOURS</b></a><br>
+                <a href="#"><b>TERMS OF USE</b></a><br>
+                <a href="#"><b>CONTACT US</b></a><br>
+            </div>
+            <div class="footer-heading footer-2">
+                <a href="#"><b>LOCATIONS</b></a><br>
+                <a href="#"><b>CAREERS</b></a><br>
+                <a href="#"><b>FAQ</b></a><br>
+            </div>
+            <div class="footer-heading footer-3">
+                <a href="#"><b>INSTAGRAM</b></a><br>
+                <a href="#"><b>FACEBOOK</b></a><br>
+                <a href="#"><b>TWITTER</b></a>
+            </div>
+            <div class="footer-heading email-form">
+                <div class="newsletter">
+                    <label for="text"><b>NEWSLETTER</b></label><br><br>
+                </div>
+                <label for="text">Name:</label>
+                <input type="text" name="lname" placeholder="Enter..." id="footer-lname"><br>
+                <label for="text">Email address:</label>
+                <input type="email" name="eaddress" placeholder="Enter..." id="footer-email"><br>
+                <input type="submit" value="Sign up" id="footer-email-button">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
