@@ -42,7 +42,7 @@ body
 #ButtonNav
 {
   list-style-type: none;
-  width: 97%;
+  width: 100%;
   margin: auto;
   padding: 20px;
   overflow: hidden;
@@ -54,6 +54,7 @@ body
   top: 0;
   box-shadow: 0 25px 35px rgba(0,0,0,0.1);
   border-bottom: 6px solid #4ac7ff;
+  box-sizing: border-box;
 }
 
 #ButtonNav li
@@ -223,7 +224,7 @@ body
   clear: both;
 }
 
-@media (max-width: 580px)
+@media (max-width: 640px)
 {
   .column.middle {
     width: 100%;
@@ -231,7 +232,7 @@ body
   }
 }
 
-@media (max-width: 580px)
+@media (max-width: 640px)
 {
   .column.side {
     width: 100%;
@@ -239,7 +240,7 @@ body
   }
 }
 
-@media (max-width: 580px)
+@media (max-width: 640px)
  {
   .row {
     height: 700px;
@@ -373,13 +374,14 @@ footer li, a, button {
 /* .... Style rules for footer content .... */
 
 .footer {
-  width: 100%;
+  width: 99%;
   color: #FFFFFF;
   margin:0 auto;
   display: inline-flex;
   justify-content: space-evenly;
   position: absolute;
   padding-top: 5%;
+  box-sizing: border-box;
 }
 
 .footer-heading {
