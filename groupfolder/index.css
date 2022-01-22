@@ -66,54 +66,14 @@ li, a, button {
     color: #FF4500;
 }
 
-
-.wrapper CovidSign2 {
-  position: absolute;
-  top: 30px;
-  left: 100px;
-  transform: translate(600px, 60px);
-}
-
-.img-wrapper {
-  width: 370px;
-  height: 40px;
-  box-shadow:0 70px 30px white;
-}
-
-.img-dropdown hover:img-text{
-  slideDown: 200px;
-  slideUp:200px;
-}
-.img-dropdown img{
-  width: 40px;
-}
-
-.img-text{
-  text-align: center;
-  color: #FFFFFF;
-  background: #262626;
-  padding 25px;
-  margin-top: -5px;
-}
-
-.img-text h2 {
-  font-size: 20px;
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  letter-spacing: 3px;
-}
-
-.img-text p {
-  font-family: "Poppins",sans-serif;
-  font-size: 15px;
-}
-
-.dropbutton {
-  background-color: #04AA6D;
+/* this is for covid alert */
+.dropbtn {
+  background-color: #ff8700;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -126,28 +86,28 @@ li, a, button {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  right: 0;
+  background-color: #4097b9;
+  min-width: 480px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 15px;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
+.dropdown-content p {
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: red;}
 
 
 /* .covid-dropbutton {
