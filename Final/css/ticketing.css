@@ -2,7 +2,6 @@
 *
 {
   font-family: "Poppins", sans-serif;
-
 }
 
 body
@@ -63,7 +62,7 @@ body
   font-weight: 500;
 }
 
-#ButtonNav li a.button:link, li a.button:visited
+#ButtonNav li a.button:link, #ButtonNav li a.button:visited
 {
   display: inline-block;
   background-color: #111;
@@ -77,22 +76,22 @@ body
   margin-right: 50px;
 }
 
-#ButtonNav li a.button.first:link, li a.button.first:visited
+#ButtonNav li a.button.first:link, #ButtonNav li a.button.first:visited
 {
   border: 2px solid #bc13fe;
 }
 
-#ButtonNav li a.button.second:link, li a.button.second:visited
+#ButtonNav li a.button.second:link, #ButtonNav li a.button.second:visited
 {
   border: 2px solid #ff08e5;
 }
 
-#ButtonNav li a.button.third:link, li a.button.third:visited
+#ButtonNav li a.button.third:link, #ButtonNav li a.button.third:visited
 {
   border: 2px solid #ffff08;
 }
 
-#ButtonNav li a.button.first:hover, li a.button.first:active
+#ButtonNav li a.button.first:hover, #ButtonNav li a.button.first:active
 {
   font-weight: 800;
   box-shadow: 0 0 .2rem #fff,
@@ -111,7 +110,7 @@ body
               0 0 151px #bc13fe;
 }
 
-#ButtonNav li a.button.second:hover, li a.button.second:active
+#ButtonNav li a.button.second:hover, #ButtonNav li a.button.second:active
 {
   font-weight: 800;
   box-shadow: 0 0 .2rem #fff,
@@ -130,7 +129,7 @@ body
               0 0 151px #ff08e5;
 }
 
-#ButtonNav li a.button.third:hover, li a.button.third:active
+#ButtonNav li a.button.third:hover, #ButtonNav li a.button.third:active
 {
   font-weight: 800;
   box-shadow: 0 0 .2rem #fff,
@@ -327,17 +326,24 @@ body
               inset 0 0 1.3rem #ffff08;
 }
 
-header li, a, button {
+header, footer{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+  background-color: #111111;
+}
+
+header li, header a, header button {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-footer li, a, button {
+
+footer li, footer a, footer button {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
   text-decoration: none;
@@ -347,8 +353,7 @@ footer li, a, button {
 .header {
   display: flex;
   align-items: center;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 2%;
   justify-content: space-evenly;
 }
 
@@ -404,7 +409,6 @@ footer li, a, button {
   justify-content: space-evenly;
   position: absolute;
   padding-top: 5%;
-  box-sizing: border-box;
 }
 
 .footer-heading {
